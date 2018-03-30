@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +11,6 @@
 */
 Route::get('/','parseController@parseJson');
 
-Route::get('krackin_project/public/saved_courses', ['as' => 'saved', 'uses' => 'parseController@index']);
+Route::get('/saved_courses', ['as' => 'saved', 'uses' => 'parseController@index']);
 
-Route::get('krackin_project/public/save/{name}/{course}/{id}', ['as' => 'save_index', 'uses' => 'parseController@save']);
+Route::get('/save/{name?}/{course?}/{id?}', ['as' => 'save_index', 'uses' => 'parseController@save']);

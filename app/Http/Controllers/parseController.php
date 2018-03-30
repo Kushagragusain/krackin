@@ -35,6 +35,7 @@ class parseController extends Controller
 		}
 		public function index()
     	{
+
         $course =  DB::table('courses')->get();
     
 
